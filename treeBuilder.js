@@ -37,7 +37,7 @@ import "/js/new_phylotree.js";
 })();
 
 /*
-* Parses either a FASTA or JSON file int {name, sequence} format
+* Parses either a FASTA or JSON file into {name, sequence} format
 * @param String text - The content of the FASTA or JSON file as a string
 * @param String type - The type of file (FASTA or JSON)
 * @returns {Array<Object>} An array of objects with `name` and `sequence` properties
