@@ -1,5 +1,6 @@
 # TreeBuilder
 A small browser module for parsing FASTA/JSON sequences, performing alignments, and building & rendering a tree with some interactive tools
+*** Limited use to 700 sequences at once ***
 ## Usage
 Load in the module using ```<script type="module" src="./treeBuilder.js"></script>```
 ## API
