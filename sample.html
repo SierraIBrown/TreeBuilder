@@ -1,0 +1,78 @@
+<!DOCTTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>FASTA/JSON Alignment Test</title>
+                <script type="module" src="/js/treeBuilder.js"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/3.0.0/jspdf.umd.min.js"></script>
+<style>
+#graph-wrapper{
+        position: relative;
+        width: 950px;
+        margin: 5px;
+        border: 1px solid #ccc;
+}
+#tree-container{
+        position: relative;
+}
+.controls{
+        position: fixed;
+        top: 275px;
+        right: 356px;
+        width: 250px;
+        background: rgba(255,255,255,0.9);
+        padding: .5em;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+}
+.fileGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+}
+.fileInput{
+        width: 100%;
+        box-sizing: border-box;
+}
+.runBtn{
+        width: 100%;
+}
+.navGroup{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+}
+.searchInput{
+        width: 100%;
+        box-sizing: border-box;
+}
+.zoomGroup{
+        display: flex;
+        gap: 0.5em;
+}
+.zoomGroup button{
+        flex: 1;
+        min-width: 0;
+}
+.legend{
+        flex: 1 1 auto;
+        overflow-y: auto;
+        max-height: 450px;
+        border: 1px solid #ccc;
+        background: #fafafa;
+        padding: 0.5em;
+}
+</style>
+        </head>
+        <body>
+                <h1>FASTA/JSON Alignment & Tree Test</h1>
+                <button id="download-btn">Download as PDF</button>
+                <div id="graph-wrapper">
+                        <div id="tree-container"></div>
+                        <div class="controls"></div>
+                </div>
+        </body>
+</html>
