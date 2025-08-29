@@ -28,10 +28,9 @@ These are the ID's each div is currently using
 ### 1. File Input
 1. ```parseSequences(String text, String type)```: Parses either a FASTA or JSON file into {name, sequence} format
 ### 2. Alignment
-1. ```alignSequences(Array<Object> sequences)```: Runs pairwise Needleman-Wunsch alignment of every sequence to the longest one
-2. ```aligning(String refSeq, String querySeq)```: Internal Needleman-Wunsch implementation
-3. ```hammingDistance(String seq1, String seq2)```: Computes the hamming distance between two sequences
-4. ```computeDistanceMatrix(Array<Object> sequences)```: Computes a simple distance matrix based on sequence differences
+1. ```needlemanWunsch(seqA, seqB)```: Runs pairwise Needleman-Wunsch alignment of every sequence to each other
+2. ```hammingDistance(String seq1, String seq2)```: Computes the hamming distance between two sequences
+3. ```computeDistanceMatrix(Array<Object> sequences)```: Computes a simple distance matrix based on sequence differences
 ### 3. Tree Rendering
 1. ```colorNodesByName(d3.Selection selection, NodeData d)```: Color-styler for tree nodes using a global window._tipColorScale
 2. ```colorEdgesByTarget(d3.Selection selection, EdgeData d)```: Color-styler for edges matching each leaf's color
